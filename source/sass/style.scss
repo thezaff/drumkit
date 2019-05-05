@@ -1,0 +1,24 @@
+/* Переменные (Начало) */
+@import "variables";
+/* Переменные (Конец) */
+/* Примеси (Начало) */
+@import "mixins";
+/* Примеси (Конец) */
+/* Шрифты (Начало)*/
+@import "fonts";
+/* Шрифты (Конец)*/
+/* Bootstrap (Начало) */
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot";
+/* Bootstrap (Конец) */
+/* Глобальные стили (Начало) */
+@import "scaffolding";
+/* Глобальные стили (Конец) */
+/* Сетака Bootstrap */
+@import "../../node_modules/bootstrap/scss/grid";
+/* Сетака Bootstrap (Конец) */
+/* Общие блоки (Начало) */
+@import "blocks/visually-hidden",
+  "blocks/logo-title",
+  "blocks/button",
+  "./app.scss";
+/* Общие блоки (Конец) */

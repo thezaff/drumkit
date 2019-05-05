@@ -1,0 +1,56 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Drum Kit
+    link(href='favicon.ico', rel='shortcut icon', sizes='16x16 32x32', type='image/vnd.microsoft.icon')
+    link(rel='apple-touch-icon', sizes='180x180', href='/assets/img/icons/apple-touch-icon.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='/assets/img/icons/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='/assets/img/icons/favicon-16x16.png')
+    link(rel='manifest', href='/site.webmanifest')
+    link(rel='mask-icon', href='/safari-pinned-tab.svg', color='#5bbad5')
+    meta(name='msapplication-TileColor', content='#00aba9')
+    meta(name='theme-color', content='#ffffff')
+    link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet')
+    link(rel='preload', href='assets/css/style.min.css', as='style')
+    // link(rel='preload', href='fonts/', as='font')
+    link(rel='stylesheet', href='assets/css/style.min.css')
+    script.
+      document.createElement('picture');
+    script(src='assets/js/picturefill.min.js', async='')
+  body
+
+    //
+      div(style='display:none')
+        include build/assets/img/svg/sprite.svg
+
+    // Header
+    //- include views/components/_header
+    // /.Header
+
+    main.main--app
+      .main__wrapper
+        h1 Durum durum
+      .bubbles
+
+      .pads
+        ul.pads__list
+          li.pads__pad.pad--1
+            audio.pad__audio(src="./assets/sounds/bubbles.mp3")
+          li.pads__pad.pad--2
+            audio.pad__audio(src="./assets/sounds/clay.mp3")
+          li.pads__pad.pad--3
+            audio.pad__audio(src="./assets/sounds/confetti.mp3")
+          li.pads__pad.pad--4
+            audio.pad__audio(src="./assets/sounds/glimmer.mp3")
+          li.pads__pad.pad--5
+            audio.pad__audio(src="./assets/sounds/moon.mp3")
+          li.pads__pad.pad--6
+            audio.pad__audio(src="./assets/sounds/ufo.mp3")
+
+    // Footer
+    //- include views/components/_footer
+    // /.Footer
+
+    script(src='assets/js/main.min.js')
